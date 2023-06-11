@@ -1,9 +1,9 @@
 export const exerciseOptions = {
   method: 'GET',
   headers: {
+    'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com',
     'X-RapidAPI-Key': process.env.API_KEY,
-    'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
-  }
+  },
 };
 
 export const fetchData = async (url, options) => {
@@ -11,4 +11,4 @@ export const fetchData = async (url, options) => {
   const data = await response.json();
 
   return data;
-}
+};
